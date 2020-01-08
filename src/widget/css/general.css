@@ -93,39 +93,45 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 .sidenav {
-    position: fixed;
-    height: 82vh;
+    /* display: none; */
+    position: absolute;
+    overflow: auto;
+    max-height: 79vh;
     left: 5px;
     right: 5px;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 123px;
     z-index: 2;
     background-color: rgba(255,255,255,0.95);
     transition: 0.5s;
     padding-top: 0;
     text-align:left;
     border-radius: 12px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    /* border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; */
     transform: translateY(105%);
     -webkit-transform: translateY(105%);
     box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    -webkit-overflow-scrolling: touch;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
 }
 
 .categories-scroll-list {
-    position: absolute;
-    left: 0;
+    /* position: absolute; */
+    /* left: 0;
     right: 0;
     top: 70px;
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    border-top: 1px solid rgba(0,0,0,0.06);
-    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid rgba(0,0,0,0.06); */
+    /* -webkit-overflow-scrolling: touch; */
 }
 
 .sidenav.showing {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
+    /* display: block !important; */
+   
 }
 
 .sidenav a {

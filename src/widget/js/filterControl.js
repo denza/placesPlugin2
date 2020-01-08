@@ -29,7 +29,7 @@ window.filterControl = {
 
                 // Add the compiled html to the page
                 document.getElementById('categories').innerHTML = theCompiledHtml;
-                sideNav.className += ' showing';
+                sideNav.style.display = 'block';
             };
         }
     },
@@ -60,7 +60,7 @@ window.filterControl = {
     closeNav: () => {
 
         let sideNav = document.getElementById("sideNav");
-        sideNav.className = sideNav.className.replace('showing', '');
+        sideNav.style.display = 'none';
 
         if (filterControl.updatedPlaces !== null && filterControl.originalPlaces != filterControl.updatedPlaces) {
             let originalPlaces = filterControl.originalPlaces,
